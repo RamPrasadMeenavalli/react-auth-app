@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <p>
-              Hello
+              Hello&nbsp;
               {data && data.user && (<span>{data.user}</span>)}
           </p>
         </header>

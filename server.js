@@ -13,7 +13,8 @@ app.get('/api/user', (req, res) => res.send({
     remoteUser:req.headers["remote-user"],
     oidcUser:req.headers["oidc-user"],
     oidcUserEmail:req.headers["oidc-user-email"],
-
 }))
+
+app.get('/api/userInfo', (req, res) => res.send(req.headers))
 
 app.listen(8080)

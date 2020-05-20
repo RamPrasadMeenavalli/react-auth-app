@@ -21,7 +21,7 @@ class App extends React.Component {
 
   componentDidMount(){
     fetch('/api/user').then(resp => resp.json().then(data => {
-      console.dir(data)
+      this.setState({data});
     }))
   }
 }

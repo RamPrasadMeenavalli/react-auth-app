@@ -31,13 +31,13 @@ app.get('/api/user', (req, res) => {
    
 })
 
-res.send({
-    user: req.headers.user,
-    logonUser:req.headers["logon-user"],
-    remoteUser:req.headers["remote-user"],
-    oidcUser:req.headers["oidc-user"],
-    oidcUserEmail:req.headers["oidc-user-email"],
-}))
+// res.send({
+//     user: req.headers.user,
+//     logonUser:req.headers["logon-user"],
+//     remoteUser:req.headers["remote-user"],
+//     oidcUser:req.headers["oidc-user"],
+//     oidcUserEmail:req.headers["oidc-user-email"],
+// }))
 
 app.get('/api/userInfo', (req, res) => res.send(req.headers))
 
